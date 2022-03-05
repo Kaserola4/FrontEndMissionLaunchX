@@ -1,0 +1,50 @@
+.navigation{
+    background-color: white;
+}
+
+.navigation > li{
+    display: inline-block;
+    margin-right: 20px;
+    height: 80px;       
+    line-height: 80px;
+    text-decoration: none;
+}
+.img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table{
+    background-color: beige;
+    display: inline-block;
+    border-style: solid;
+}
+
+table  th{
+    background-color: rgb(216, 216, 166);
+}
+
+a{
+    text-decoration: none;
+}
+
+div{
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(85, 52, 8, 0.822);
+    color: white;
+    text-align: center;
+}
