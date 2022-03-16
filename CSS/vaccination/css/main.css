@@ -1,0 +1,465 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --content-padding: 30px 10% ;
+    --nav-text-size: x-large;
+    --text-accent-color: rgb(109, 123, 147);
+    --text-important-color: rgb(31, 62, 114);
+    --detail-color: rgb(39, 71, 197)
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: var(--content-padding);
+    background-color: white;
+}
+button{
+    background-color: rgb(55, 87, 213);
+    color: white;
+    border: none;
+}
+li, a, button {
+    text-decoration: none;
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+}
+header button {
+    padding: 20px 35px;
+    margin-left: 25px;
+    font-size: var(--nav-text-size);
+    border-radius: 8px;
+    box-shadow: 0px 10px 8px 4px rgba(149, 165, 230, 0.401);
+    font-weight: 600;
+    transition: 0.3s;
+}
+header button:hover {
+    cursor: pointer;
+    color: var(--text-important-color);
+    background-color: rgb(239, 243, 255);
+}
+.common-svg{
+    fill: var(--detail-color);
+    background-color: rgb(239, 243, 255);
+    border: 2px solid white;
+    box-shadow: 0px 15px 10px 4px rgb(239, 244, 255, 0.95);
+    margin-left: 10px;
+}
+.logo{
+    color: var(--detail-color);
+    cursor: default;
+    margin-right: auto;
+    font-size: 35px;
+    font-weight: 700;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0 35px;
+    color: rgb(109, 123, 147);
+    font-size: var(--nav-text-size);
+    font-weight: 700;
+}
+.nav__links li a:visited {
+    color: var(--text-accent);
+}
+
+/* Landing */
+
+.presentation{
+    padding: var(--content-padding);
+}
+.presentation{
+    padding-top: 80px;
+    background: url(../img/nurse1.jpg);
+    background-position: 100% 10%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.presentation h1{
+    padding-bottom: 30px;
+    font-size: 80px;
+    color: var(--text-important-color);
+}
+.presentation__paragraph {
+    font-size: x-large;
+    font-weight: 600;
+    color: var(--text-accent-color);
+    margin-top: 10px;
+}
+.presentation__paragraph_svg{
+    height: 20px;
+    fill: rgb(255, 208, 18);
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgb(255, 251, 240);
+    border: 2px solid white;
+    box-shadow: 0px 15px 10px 4px rgb(255, 251, 240, 0.95);
+    margin-left: 10px;
+}
+.presentation strong {
+    display: inline-block;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    vertical-align: middle;
+    font-size: larger;
+    color: var(--text-important-color);
+}
+.presentation__tips{
+    padding-top: 60px;
+}
+/* Schedule */
+
+
+
+.presentation__schedule__svg{
+    margin-top: 300px;
+    padding: 10px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.presentation__schedule{
+    color: var(--text-important-color);
+    font-size: 30px;
+    font-weight: 800;
+    display: inline-block;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    vertical-align: middle;
+    color: var(--text-important-color);
+}
+.presentation__schedule__info{
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(10px);
+    border: 5px solid white;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px 40px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px 0px rgb(0, 0, 0, 0.07),
+                 10px 25px 60px 2px rgba(0, 0, 0, 0.07);
+
+}
+.presentation__schedule__info table{
+    display: inline-block;
+}
+.presentation__schedule__info th{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-accent-color);
+}
+.presentation__schedule__info td{
+    font-size: 30px;
+    padding-left: 80px;
+    color: var(--text-important-color);   
+    padding-right: 20px;
+    font-weight: 700;
+}
+.presentation__schedule__info button{
+    float: right;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 25px 50px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.presentation__schedule__info button:hover{
+    cursor: pointer;
+    color: var(--text-important-color);
+    background-color: rgb(239, 243, 255);
+}
+.presentation__schedule__info svg{
+    fill: var(--detail-color);
+    /* margin-right: 10px; */
+    background-color: rgb(239, 243, 255);
+    height: 20px;
+    padding: 10px;
+    margin-right: 30px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+/* https://github.com/Kaserola4 */
+/* Vaccines logos */
+
+.vaccines-logo {
+    display: flex;
+    padding: var(--content-padding);
+    justify-content: center;
+} 
+.vaccines-logo img {
+    filter: grayscale(0.85) opacity(0.2);
+    padding-top: 90px;
+    padding-left: 120px;
+    padding-bottom: 90px;
+}
+
+.why-vaccines div{
+    padding: var(--content-padding);
+}
+
+.why-vaccines h1 {
+    padding-bottom: 30px;
+    font-size: 60px;
+    color: var(--text-important-color);
+}
+.why-vaccines__paragraph{
+    font-size: x-large;
+    font-weight: 600;
+    color: var(--text-accent-color);
+    margin-top: 10px;
+}
+.why-vaccines__card{
+    display: flex;
+    justify-content: space-between;
+}
+.why-vaccines__card div{
+	width: 270px;
+	height: 345px;
+	padding: 40px 40px;
+	border: 5px solid rgb(250, 250, 255);
+	border-radius: 12px;
+	padding-bottom: 30px;
+	transition: border 0.3s, background-color 0.3s;
+	background-color: white;
+}
+.why-vaccines__card div:hover{
+	border: 0px solid rgb(250, 250, 255);
+	box-shadow: 0px 20px 30px 0px rgba(186, 190, 233, 0.25),
+				inset 0px -1px 30px 0px rgba(186, 190, 233, 0.1);
+}
+.why-vaccines__card svg {
+	padding: 15px;
+	margin-bottom: 30px;
+	height: 45px;
+	fill: var(--detail-color);
+	background-color: rgb(239, 243, 255);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.why-vaccines__card strong {
+    display: block;
+    color: var(--text-important-color);
+    font-size: x-large;
+}
+.why-vaccines__card p {
+	color: var(--text-accent-color);
+	font-size: large;
+	font-weight: 500;
+	padding-top: 10px;
+}
+
+/* Preparations */
+
+.preparations {
+	margin-top: 40px;
+	padding: 30px 10%;
+}
+.preparations-bg{
+    display: flex;
+    justify-content: right;
+    background: url(../img/girl-white-mask.png);
+    background-repeat: no-repeat;
+}
+.preparations__message{
+    margin-bottom: 100px;
+}
+.preparations__message h1{
+	font-size: 50px;
+	color: var(--text-important-color);
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.preparations__message p{
+    font-size: x-large;
+    font-weight: 500;
+    color: var(--text-accent-color);
+    padding-top: 10px;
+}
+
+/* Preparations accordion */
+.preparations__accordion__rectangle{
+    margin-top: 10px;
+}
+.preparations__accordion__button {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: var(--text-important-color);
+    cursor: pointer;
+    border-radius: 8px;
+    border: 3px solid rgb(250, 250, 255);
+    text-align: left;
+    font-size: x-large;
+    font-weight: 600;
+    transition: 0.4s;
+    padding: 20px;
+}
+.preparations__accordion__button svg{
+    padding: 10px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    box-shadow: none;
+    border-radius: 8px;
+}
+.preparations__accordion__button:hover{
+    box-shadow: 1px 0px 0px 2px rgba(149, 156, 231, 0.25);
+}
+.preparations__accordion__panel {
+    padding: 0 18px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: rgba(149, 156, 231, 0.027);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: large;
+    color: var(--text-accent-color);
+}
+
+/* Emergency */
+.emergency__bg{
+    padding: var(--content-padding);
+    background-image: url(../img/man-phone.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 70%;
+}
+.emergency__message h1{
+    margin-top: 220px;
+    color: var(--text-important-color);
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+.emergency__message p{
+    color: var(--text-accent-color);
+    font-size: x-large;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.emergency__grid-container {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 35vw;
+}
+.emergency__grid-item {
+    padding: 40px 40px 0px 40px;
+    margin: 20px;
+    border: 4px solid rgb(250, 250, 255);
+	border-radius: 12px;
+    width: 275px;
+}
+.emergency__grid-item div {
+    display: inline-block;
+    vertical-align: top;
+}
+.emergency__grid-item h3 {
+    display: inline;
+    color: var(--text-important-color);
+    font-weight: 500px;
+    font-size: x-large;
+}
+.emergency__grid-item strong{
+    display: block;
+    font-size: larger;
+    color: var(--text-accent-color);
+    margin-top: 20px;
+    font-weight: 500;
+}
+.emergency__grid-item svg{
+    display: inline-flex;
+    height: 44px;
+    margin: 0;
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: none;
+}
+.emergency__grid-item button{
+    display: block;
+    font-size: x-large;
+    font-weight: 700;
+    border-radius: 8px;
+    width: 100%;
+    padding: 30px 0px;
+    margin: 50px 0px;
+    background-color: rgb(239, 243, 255);
+    color: var(--detail-color);
+    transition: 0.3s;
+}
+.emergency__grid-item button:hover{
+    cursor: pointer;
+    background-color: var(--detail-color);
+    color: rgb(239, 243, 255);
+}
+.emergency__grid-item:hover{
+    border: none;
+    box-shadow: 0px 30px 20px 0px rgb(0, 0, 0, 0.07);
+}
+
+/* Footer */
+footer{
+    background-color: rgb(239, 243, 255);
+    padding: var(--content-padding);
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__message {
+    color: var(--text-accent-color);
+    font-size: large;
+    font-weight: 600;
+    line-height: 30px;
+}
+.footer__columns {
+    display: flex;
+}
+.footer__columns div {
+    padding-top: 35px; 
+    margin: 40px 60px;
+    margin-top: 45px;
+}
+.footer__columns h4{
+    padding-top: 0;
+    color: var(--text-important-color);
+    font-size: 30px;
+}
+.footer__columns ul {
+    display: inline-block;
+}
+.footer__columns ul li {
+    padding-top: 30px;
+    display: block;
+    color: var(--text-accent-color);
+    font-size: larger;
+    font-weight: 600;
+}
+.footer__rights {
+    color: var(--text-accent-color);
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-top: 60px;
+}
+.footer__rights li{
+    display: inline;
+    margin-left: 30px;
+}
